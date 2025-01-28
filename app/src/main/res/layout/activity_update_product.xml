@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To update, search a product by name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Product Name -->
+    <EditText
+        android:id="@+id/edit_text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Product Price -->
+    <EditText
+        android:id="@+id/edit_text_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Product Quantity -->
+    <EditText
+        android:id="@+id/edit_text_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Quantity"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background" />
+
+    <!-- Product ID -->
+    <TextView
+        android:id="@+id/text_view_product_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Product ID" />
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/image_view_product"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/default_product_image" />
+
+    <!-- Select Image Button -->
+    <Button
+        android:id="@+id/button_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginTop="16dp" />
+
+    <!-- Horizontal layout for Search and Update buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <!-- Search Button -->
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search"
+            android:backgroundTint="@color/colorButtonSearch" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update Product"
+            android:backgroundTint="@color/colorButtonUpdate" />
+    </LinearLayout>
+
+</LinearLayout>

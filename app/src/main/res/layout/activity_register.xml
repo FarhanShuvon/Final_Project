@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign_up"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/et_register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:autofillHints="username" />
+
+    <EditText
+        android:id="@+id/et_register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:autofillHints="emailAddress" />
+    <TextView
+        android:id="@+id/tv_password_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Password must be at least 6 characters and include one uppercase, lowercase, digit, and special character."
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:paddingBottom="4dp"
+        android:paddingTop="8dp"/>
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:autofillHints="password" />
+
+    <EditText
+        android:id="@+id/et_register_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="confirm_password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:autofillHints="password" />
+
+    <EditText
+        android:id="@+id/et_register_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:autofillHints="phoneNumber" />
+    <CheckBox
+        android:id="@+id/checkbox_show_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:checked="false"
+        android:layout_marginTop="8dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="login"
+            android:padding="12dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="register"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Text Message -->
+    <TextView
+        android:id="@+id/tv_select_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome! Please select a category:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button for Cars -->
+    <Button
+        android:id="@+id/btn_cars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cars"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/tv_select_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button for Motorbikes -->
+    <Button
+        android:id="@+id/btn_motorbikes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motorbikes"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/btn_cars"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/btn_motorbikes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
